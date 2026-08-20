@@ -113,16 +113,7 @@ Each client takes the server URI as an optional first argument.
 `shared/game_rules.py` is the only file that knows the actual rules of the
 game (what cards exist, what a turn resolution means, when the game ends).
 Everything else — networking, hidden-info filtering, simultaneous
-resolution — is generic and shouldn't need to change. To build your real
-game:
-
-1. Replace `deal_hand` with your actual card pool and dealing logic.
-2. Replace `resolve_turn` with your actual resolution rules (may need more
-   than two cards' values compared — extend `shared/models.py`'s `Card` and
-   `PlayCardAction` if a "play" becomes more than a single card ID).
-3. `server/session.py` calls into this module — update it if a turn starts
-   needing more state than "one card ID per player" (e.g. targeting,
-   multiple cards per turn, mana/resource costs).
+resolution — is generic and shouldn't need to change. 
 
 ## Known gaps (v1)
 
