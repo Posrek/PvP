@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+*.log
+.pytest_cache/
+.mypy_cache/
+.vscode/*
+!.vscode/settings.json
+.DS_Store
+Thumbs.db
+.claude/settings.local.json
