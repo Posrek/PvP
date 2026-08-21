@@ -6,10 +6,6 @@ full; your opponent's hand shows only as a card count. Turns are
 **simultaneous**: both players pick a card, and nothing is revealed until
 both have committed, at which point the turn resolves for both at once.
 
-The current game rules ("highest card wins the turn") are a placeholder used
-to prove out the networking and turn-resolution plumbing. Swap in your real
-game design once you're ready — see [Replacing the game rules](#replacing-the-game-rules).
-
 ## How it works
 
 ```
